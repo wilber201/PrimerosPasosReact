@@ -35,6 +35,14 @@
   font-weight: bold;
 }
 
+.twitter-follow-btn.isFollowing {
+  background-color: #47494a;
+}
+
 .twitter-follow-btn:hover {
   background-color: #2880d8;
+}
+
+.twitter-follow-btn.isFollowing:hover {
+  background-color: #ff0033;
 }
