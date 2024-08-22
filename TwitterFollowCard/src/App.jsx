@@ -2,23 +2,19 @@ import "./App.css";
 import { TwitterFollowCard } from "./TwitterFollowCard";
 
 export function App() {
-  return (
-    <>
-      <TwitterFollowCard
-        _userImage="wilber201"
-        _nombre="Wilber"
-        _username="@Wilber201"
-      />
-      <TwitterFollowCard
-        _userImage="midudev"
-        _nombre="midudev"
-        _username="@midudev"
-      />
-      <TwitterFollowCard
-        _userImage="Guinxu"
-        _nombre="Guinxu"
-        _username="@Guinxu"
-      />
-    </>
-  );
+	return (
+		<>
+			<TwitterFollowCard _isFollowing={true} _userImage="wilber201" _username="@Wilber201">
+				Wilber
+			</TwitterFollowCard>
+
+			<TwitterFollowCard _isFollowing={true} _userImage="midudev" _username="@midudev">
+				Midudev
+			</TwitterFollowCard>
+
+			<TwitterFollowCard _userImage="Guinxu" _username="@Guinxu">
+				Guinxu
+			</TwitterFollowCard>
+		</>
+	);
 }
