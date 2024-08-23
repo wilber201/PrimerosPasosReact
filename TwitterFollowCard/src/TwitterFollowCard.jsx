@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-export function TwitterFollowCard({ children, userImage, username }) {
-	const [isFollowing, setIsFollowing] = useState(false);
+export function TwitterFollowCard({ children, isFollowingStartup, userImage, username }) {
+	const [isFollowing, setIsFollowing] = useState(isFollowingStartup);
 
 	const text = isFollowing ? "Siguiendo" : "Seguir";
 	const followButtonClass = isFollowing ? "twitter-follow-btn isFollowing" : "twitter-follow-btn";
@@ -11,6 +11,7 @@ export function TwitterFollowCard({ children, userImage, username }) {
 	};
 
 	return (
+		console.log(isFollowingStartup),
 		<article className="twitter-card">
 			<header className="twitter-header">
 				<img src={`https://unavatar.io/${userImage}`} alt="Wilber,Avatar" className="twitter-avatar" />
